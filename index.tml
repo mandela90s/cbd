@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VAPES CALLI - Premium CBD Products</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Age Gate -->
+    <div id="age-verify" class="age-gate">
+        <div class="gate-content">
+            <img src="images/logo.png" alt="CBD Leaf" class="gate-logo">
+            <h2>Are you 21 or older?</h2>
+            <div class="gate-buttons">
+                <button onclick="verifyAge(true)">Yes</button>
+                <button onclick="verifyAge(false)">No</button>
+            </div>
+            <p class="disclaimer">*CBD products containing less than 0.3% THC</p>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="main-header">
+        <div class="header-content">
+            <img src="images/logo.png" alt="Logo" class="header-logo">
+            <h1>VAPES CALLI</h1>
+            <nav class="main-nav">
+                <div class="search-container">
+                    <input type="text" placeholder="Search products..." id="searchInput">
+                </div>
+                <a href="#products">Products</a>
+                <a href="#about">About</a>
+                <a href="#payment">Payment</a>
+                <a href="#delivery">Delivery</a>
+                <a href="login.html" class="auth-link">Login/Signup</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Product Grid -->
+    <main class="product-container" id="products"></main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-column">
+            <h3>Categories</h3>
+            <a href="#vapes">CBD Vapes</a>
+            <a href="#gummies">CBD Gummies</a>
+        </div>
+        <div class="footer-column">
+            <h3>Connect</h3>
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+        </div>
+        <div class="footer-column">
+            <button class="contact-btn">Contact Us</button>
+            <p>24/7 Support: 1-800-CBD-VAPE</p>
+        </div>
+    </footer>
+
+    <script src="products.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
